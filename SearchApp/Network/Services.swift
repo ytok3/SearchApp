@@ -16,7 +16,7 @@ protocol ServiceProtocol {
 final class Services: ServiceProtocol {
     
     func getSearch(input: String, onSuccess: @escaping ([Search]?) -> Void, onError: @escaping (AFError) -> Void) {
-        ServiceManager.shared.fetch(path: Constant.Network.BASE_URL + "\(input)", data: nil, method: HTTPMethod.get) { (response: SearchList) in
+        ServiceManager.shared.fetch(path: Constant.Network.BASE_URL + "\(input)" + Constant.Firebase.LIMIT, data: nil, method: HTTPMethod.get) { (response: SearchList) in
             onSuccess(response.results)
             print(response)
         } onError: { error in

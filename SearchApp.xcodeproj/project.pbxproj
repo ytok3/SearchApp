@@ -20,6 +20,9 @@
 		4767C1E627E0E6FC008E8BDB /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1E527E0E6FC008E8BDB /* Firebase.swift */; };
 		4767C1E827E3A6DF008E8BDB /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1E727E3A6DF008E8BDB /* Properties.swift */; };
 		4767C1EA27E3AB28008E8BDB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1E927E3AB28008E8BDB /* SearchViewModel.swift */; };
+		4767C1ED27E514D5008E8BDB /* SearchCollectionViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1EC27E514D4008E8BDB /* SearchCollectionViewFeatures.swift */; };
+		4767C1EF27E5169E008E8BDB /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1EE27E5169E008E8BDB /* Cell.swift */; };
+		4767C1F127E516E6008E8BDB /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F027E516E6008E8BDB /* SearchCollectionViewCell.swift */; };
 		D619A39A20203157D113873D /* Pods_SearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5261D83440C1C861290C2F /* Pods_SearchApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 		4767C1E527E0E6FC008E8BDB /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		4767C1E727E3A6DF008E8BDB /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		4767C1E927E3AB28008E8BDB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		4767C1EC27E514D4008E8BDB /* SearchCollectionViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewFeatures.swift; sourceTree = "<group>"; };
+		4767C1EE27E5169E008E8BDB /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		4767C1F027E516E6008E8BDB /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		8F5261D83440C1C861290C2F /* Pods_SearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		932E6040A572464463F210B6 /* Pods-SearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchApp.release.xcconfig"; path = "Target Support Files/Pods-SearchApp/Pods-SearchApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +124,7 @@
 			children = (
 				4767C1C527E0DB75008E8BDB /* SearchViewController.swift */,
 				4767C1E927E3AB28008E8BDB /* SearchViewModel.swift */,
+				4767C1EB27E5148B008E8BDB /* SearchCollectionView */,
 			);
 			path = SearchList;
 			sourceTree = "<group>";
@@ -147,8 +154,18 @@
 				4767C1E327E0E5EE008E8BDB /* Network.swift */,
 				4767C1E527E0E6FC008E8BDB /* Firebase.swift */,
 				4767C1E727E3A6DF008E8BDB /* Properties.swift */,
+				4767C1EE27E5169E008E8BDB /* Cell.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		4767C1EB27E5148B008E8BDB /* SearchCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4767C1EC27E514D4008E8BDB /* SearchCollectionViewFeatures.swift */,
+				4767C1F027E516E6008E8BDB /* SearchCollectionViewCell.swift */,
+			);
+			path = SearchCollectionView;
 			sourceTree = "<group>";
 		};
 		F252ED89D9262B3C0E2E3398 /* Pods */ = {
@@ -274,15 +291,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4767C1EA27E3AB28008E8BDB /* SearchViewModel.swift in Sources */,
+				4767C1ED27E514D5008E8BDB /* SearchCollectionViewFeatures.swift in Sources */,
 				4767C1E227E0E5BF008E8BDB /* Constant.swift in Sources */,
 				4767C1C627E0DB75008E8BDB /* SearchViewController.swift in Sources */,
 				4767C1E427E0E5EE008E8BDB /* Network.swift in Sources */,
+				4767C1EF27E5169E008E8BDB /* Cell.swift in Sources */,
 				4767C1DF27E0E1C8008E8BDB /* Services.swift in Sources */,
 				4767C1DB27E0E10E008E8BDB /* Search.swift in Sources */,
 				4767C1C227E0DB75008E8BDB /* AppDelegate.swift in Sources */,
 				4767C1E627E0E6FC008E8BDB /* Firebase.swift in Sources */,
 				4767C1C427E0DB75008E8BDB /* SceneDelegate.swift in Sources */,
 				4767C1E827E3A6DF008E8BDB /* Properties.swift in Sources */,
+				4767C1F127E516E6008E8BDB /* SearchCollectionViewCell.swift in Sources */,
 				4767C1DD27E0E1B3008E8BDB /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

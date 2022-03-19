@@ -34,6 +34,7 @@ final class SearchViewModel: SearchViewModelProtocol {
     func searchAllResults(inputSearch: String) {
         service.getSearch(input: inputSearch) { [weak self] (response) in
             self?.searchAll = response
+            self?.searchOutput?.listSearchResults(values: self?.searchAll ?? [])
             print(self?.searchAll ?? [])
         } onError: { error in
             print(error)

@@ -23,6 +23,9 @@
 		4767C1ED27E514D5008E8BDB /* SearchCollectionViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1EC27E514D4008E8BDB /* SearchCollectionViewFeatures.swift */; };
 		4767C1EF27E5169E008E8BDB /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1EE27E5169E008E8BDB /* Cell.swift */; };
 		4767C1F127E516E6008E8BDB /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F027E516E6008E8BDB /* SearchCollectionViewCell.swift */; };
+		4767C1F327E5E5CE008E8BDB /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F227E5E5CE008E8BDB /* Music.swift */; };
+		4767C1F627E5F3B1008E8BDB /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F527E5F3B1008E8BDB /* SearchDetailViewController.swift */; };
+		4767C1F827E5F8F9008E8BDB /* SearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F727E5F8F9008E8BDB /* SearchDetail.swift */; };
 		D619A39A20203157D113873D /* Pods_SearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5261D83440C1C861290C2F /* Pods_SearchApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		4767C1EC27E514D4008E8BDB /* SearchCollectionViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewFeatures.swift; sourceTree = "<group>"; };
 		4767C1EE27E5169E008E8BDB /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4767C1F027E516E6008E8BDB /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		4767C1F227E5E5CE008E8BDB /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		4767C1F527E5F3B1008E8BDB /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		4767C1F727E5F8F9008E8BDB /* SearchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetail.swift; sourceTree = "<group>"; };
 		8F5261D83440C1C861290C2F /* Pods_SearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		932E6040A572464463F210B6 /* Pods-SearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchApp.release.xcconfig"; path = "Target Support Files/Pods-SearchApp/Pods-SearchApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4767C1D727E0DD25008E8BDB /* SearchList */,
+				4767C1F427E5F388008E8BDB /* SearchDetail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -143,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				4767C1DA27E0E10E008E8BDB /* Search.swift */,
+				4767C1F227E5E5CE008E8BDB /* Music.swift */,
+				4767C1F727E5F8F9008E8BDB /* SearchDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +175,14 @@
 				4767C1F027E516E6008E8BDB /* SearchCollectionViewCell.swift */,
 			);
 			path = SearchCollectionView;
+			sourceTree = "<group>";
+		};
+		4767C1F427E5F388008E8BDB /* SearchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4767C1F527E5F3B1008E8BDB /* SearchDetailViewController.swift */,
+			);
+			path = SearchDetail;
 			sourceTree = "<group>";
 		};
 		F252ED89D9262B3C0E2E3398 /* Pods */ = {
@@ -292,15 +309,18 @@
 			files = (
 				4767C1EA27E3AB28008E8BDB /* SearchViewModel.swift in Sources */,
 				4767C1ED27E514D5008E8BDB /* SearchCollectionViewFeatures.swift in Sources */,
+				4767C1F327E5E5CE008E8BDB /* Music.swift in Sources */,
 				4767C1E227E0E5BF008E8BDB /* Constant.swift in Sources */,
 				4767C1C627E0DB75008E8BDB /* SearchViewController.swift in Sources */,
 				4767C1E427E0E5EE008E8BDB /* Network.swift in Sources */,
+				4767C1F627E5F3B1008E8BDB /* SearchDetailViewController.swift in Sources */,
 				4767C1EF27E5169E008E8BDB /* Cell.swift in Sources */,
 				4767C1DF27E0E1C8008E8BDB /* Services.swift in Sources */,
 				4767C1DB27E0E10E008E8BDB /* Search.swift in Sources */,
 				4767C1C227E0DB75008E8BDB /* AppDelegate.swift in Sources */,
 				4767C1E627E0E6FC008E8BDB /* Firebase.swift in Sources */,
 				4767C1C427E0DB75008E8BDB /* SceneDelegate.swift in Sources */,
+				4767C1F827E5F8F9008E8BDB /* SearchDetail.swift in Sources */,
 				4767C1E827E3A6DF008E8BDB /* Properties.swift in Sources */,
 				4767C1F127E516E6008E8BDB /* SearchCollectionViewCell.swift in Sources */,
 				4767C1DD27E0E1B3008E8BDB /* ServiceManager.swift in Sources */,

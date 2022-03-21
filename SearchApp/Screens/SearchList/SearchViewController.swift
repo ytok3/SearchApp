@@ -10,7 +10,9 @@ import UIKit
 final class SearchViewController: UIViewController {
     
     private var searchViewModel: SearchViewModel = SearchViewModel(service: Services())
-    private var searchcollectionViewFeatures: SearchCollectionViewFeatures = SearchCollectionViewFeatures()
+    private var searchCollectionViewFeatures: SearchCollectionViewFeatures = SearchCollectionViewFeatures()
+    private var detailVC: SearchDetailViewController = SearchDetailViewController()
+    var data: String = ""
     
     private let searchBar: UISearchBar = {
         let searchBar = UISearchBar()
@@ -35,7 +37,7 @@ final class SearchViewController: UIViewController {
         button.clipsToBounds = true
         button.setTitle(Constant.Properties.MOVIES, for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = .systemGray6
+        button.backgroundColor = .systemGray5
         return button
     }()
     
@@ -45,7 +47,8 @@ final class SearchViewController: UIViewController {
         button.clipsToBounds = true
         button.setTitle(Constant.Properties.MUSIC, for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = .systemGray6
+        button.addTarget(self, action: #selector(pressed), for: .touchUpInside)
+        button.backgroundColor = .systemGray5
         return button
     }()
     
@@ -55,7 +58,7 @@ final class SearchViewController: UIViewController {
         button.clipsToBounds = true
         button.setTitle(Constant.Properties.APPS, for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = .systemGray6
+        button.backgroundColor = .systemGray5
         return button
     }()
     
@@ -65,7 +68,7 @@ final class SearchViewController: UIViewController {
         button.clipsToBounds = true
         button.setTitle(Constant.Properties.BOOKS, for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = .systemGray6
+        button.backgroundColor = .systemGray5
         return button
     }()
     
@@ -79,29 +82,17 @@ final class SearchViewController: UIViewController {
         return collectionView
     }()
     
-    private let noResultsLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 20)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .gray
-        //label.text = Path.PropertiesPath.NO_RESULTS
-        return label
-    }()
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = searchcollectionViewFeatures
-        collectionView.dataSource = searchcollectionViewFeatures
+        collectionView.delegate = searchCollectionViewFeatures
+        collectionView.dataSource = searchCollectionViewFeatures
         
-        
-        
+        searchCollectionViewFeatures.delegate = self
         searchBar.delegate = self
+        
         setUpView()
         
-        noResultsLabel.isHidden = true
     }
     
     func setUpView() {
@@ -115,7 +106,6 @@ final class SearchViewController: UIViewController {
         horizontalStack.addArrangedSubview(appsButton)
         horizontalStack.addArrangedSubview(booksButton)
 
-        
         setUpConstraint()
     }
     
@@ -152,6 +142,13 @@ final class SearchViewController: UIViewController {
     
         ])
     }
+    
+    @objc func pressed() {
+        
+        self.searchCollectionViewFeatures.search.removeAll()
+        searchViewModel.searchMusicVideos(inputMusic: data)
+        collectionView.reloadData()
+    }
 }
 
 extension SearchViewController: UISearchBarDelegate {
@@ -161,33 +158,40 @@ extension SearchViewController: UISearchBarDelegate {
         searchBar.endEditing(true)
         
         let trimmedSearch = searchBar.text!.replacingOccurrences(of: " ", with: "")
-        
         let input = trimmedSearch.lowercased()
+        
+        data = input
         
         print(input)
            
         searchViewModel.setDelegateSearchAll(output: self)
         searchViewModel.searchAllResults(inputSearch: input)
-            
+        
     }
 }
 
 extension SearchViewController: SearchBarOutput  {
+    
     func getHeight() -> CGFloat {
         return view.bounds.height
     }
     
     func onSelected(ID: Int) {
         print(ID)
+        searchViewModel.searchDetail(id: ID)
+        searchViewModel.setDelegateDetail(output: detailVC)
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
     func listSearchResults(values: [Search]) {
-        searchcollectionViewFeatures.search = values
-        
+        searchCollectionViewFeatures.search = values
         collectionView.reloadData()
     }
     
-    
+    func listMusicVideos(values: [Search]) {
+        searchCollectionViewFeatures.search = values
+        collectionView.reloadData()
+    }
 }
 
 

@@ -16,18 +16,25 @@ protocol SearchBarOutput: AnyObject {
 }
 
 class SearchCollectionViewFeatures: NSObject {
+    
+    // MARK: Properties
+    
     var search: [Search] = []
     weak var delegate: SearchBarOutput?
 }
 
+// MARK: Exensions
+
 extension SearchCollectionViewFeatures: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(search.count)
         return search.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constant.Cell.CELL, for: indexPath) as? SearchCollectionViewCell else { return UICollectionViewCell() }
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constant.Cell.CELL, for: indexPath)
+                as? SearchCollectionViewCell else { return UICollectionViewCell() }
         cell.showCharacters(model: search[indexPath.item])
         return cell
     }
@@ -37,6 +44,7 @@ extension SearchCollectionViewFeatures: UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         let colums: CGFloat = 2
         let collectioViewWith = collectionView.bounds.width
         let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
@@ -46,5 +54,4 @@ extension SearchCollectionViewFeatures: UICollectionViewDelegate, UICollectionVi
         let height = (delegate?.getHeight() ?? 300.0 ) / 4
         return CGSize(width: width, height: height)
     }
-    
 }

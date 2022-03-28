@@ -23,7 +23,6 @@
 		4767C1ED27E514D5008E8BDB /* SearchCollectionViewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1EC27E514D4008E8BDB /* SearchCollectionViewFeatures.swift */; };
 		4767C1EF27E5169E008E8BDB /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1EE27E5169E008E8BDB /* Cell.swift */; };
 		4767C1F127E516E6008E8BDB /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F027E516E6008E8BDB /* SearchCollectionViewCell.swift */; };
-		4767C1F327E5E5CE008E8BDB /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F227E5E5CE008E8BDB /* Music.swift */; };
 		4767C1F627E5F3B1008E8BDB /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F527E5F3B1008E8BDB /* SearchDetailViewController.swift */; };
 		4767C1F827E5F8F9008E8BDB /* SearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767C1F727E5F8F9008E8BDB /* SearchDetail.swift */; };
 		D619A39A20203157D113873D /* Pods_SearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5261D83440C1C861290C2F /* Pods_SearchApp.framework */; };
@@ -49,7 +48,6 @@
 		4767C1EC27E514D4008E8BDB /* SearchCollectionViewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewFeatures.swift; sourceTree = "<group>"; };
 		4767C1EE27E5169E008E8BDB /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4767C1F027E516E6008E8BDB /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
-		4767C1F227E5E5CE008E8BDB /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		4767C1F527E5F3B1008E8BDB /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		4767C1F727E5F8F9008E8BDB /* SearchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetail.swift; sourceTree = "<group>"; };
 		8F5261D83440C1C861290C2F /* Pods_SearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				4767C1DA27E0E10E008E8BDB /* Search.swift */,
-				4767C1F227E5E5CE008E8BDB /* Music.swift */,
 				4767C1F727E5F8F9008E8BDB /* SearchDetail.swift */,
 			);
 			path = Model;
@@ -309,7 +306,6 @@
 			files = (
 				4767C1EA27E3AB28008E8BDB /* SearchViewModel.swift in Sources */,
 				4767C1ED27E514D5008E8BDB /* SearchCollectionViewFeatures.swift in Sources */,
-				4767C1F327E5E5CE008E8BDB /* Music.swift in Sources */,
 				4767C1E227E0E5BF008E8BDB /* Constant.swift in Sources */,
 				4767C1C627E0DB75008E8BDB /* SearchViewController.swift in Sources */,
 				4767C1E427E0E5EE008E8BDB /* Network.swift in Sources */,

@@ -9,10 +9,14 @@ import UIKit
 
 final class SearchViewController: UIViewController {
     
+    // MARK: Properties
+    
     private var searchViewModel: SearchViewModel = SearchViewModel(service: Services())
     private var searchCollectionViewFeatures: SearchCollectionViewFeatures = SearchCollectionViewFeatures()
     private var detailVC: SearchDetailViewController = SearchDetailViewController()
     var data: String = ""
+    
+    // MARK: View
     
     private let searchBar: UISearchBar = {
         let searchBar = UISearchBar()
@@ -82,8 +86,18 @@ final class SearchViewController: UIViewController {
         return collectionView
     }()
     
+    // MARK: LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUpDelegate()
+        
+    }
+    
+    // MARK: Func
+    
+    func setUpDelegate() {
         
         collectionView.delegate = searchCollectionViewFeatures
         collectionView.dataSource = searchCollectionViewFeatures
@@ -151,6 +165,8 @@ final class SearchViewController: UIViewController {
     }
 }
 
+// MARK: Extensions
+
 extension SearchViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -161,12 +177,10 @@ extension SearchViewController: UISearchBarDelegate {
         let input = trimmedSearch.lowercased()
         
         data = input
-        
         print(input)
            
         searchViewModel.setDelegateSearchAll(output: self)
         searchViewModel.searchAllResults(inputSearch: input)
-        
     }
 }
 
@@ -177,7 +191,6 @@ extension SearchViewController: SearchBarOutput  {
     }
     
     func onSelected(ID: Int) {
-        print(ID)
         searchViewModel.searchDetail(id: ID)
         searchViewModel.setDelegateDetail(output: detailVC)
         self.navigationController?.pushViewController(detailVC, animated: true)

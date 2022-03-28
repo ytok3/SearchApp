@@ -13,6 +13,8 @@ protocol SearchDetailOutput {
 
 class SearchDetailViewController: UIViewController {
     
+    // MARK: View
+    
     private let verticalStack: UIStackView = {
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
@@ -37,7 +39,7 @@ class SearchDetailViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
         label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont.boldSystemFont(ofSize: 22)
         label.numberOfLines = 0
         label.backgroundColor = .white
         return label
@@ -71,7 +73,6 @@ class SearchDetailViewController: UIViewController {
             verticalStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: padding),
             verticalStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             verticalStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            //verticalStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -padding),
             verticalStack.widthAnchor.constraint(equalToConstant: view.frame.width - padding * 2),
             verticalStack.heightAnchor.constraint(equalToConstant: view.frame.height / 10),
             

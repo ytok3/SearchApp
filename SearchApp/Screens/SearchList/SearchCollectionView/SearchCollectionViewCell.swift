@@ -9,6 +9,8 @@ import UIKit
 
 class SearchCollectionViewCell: UICollectionViewCell {
     
+    // MARK: View
+    
     private let verticalStack: UIStackView = {
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
@@ -70,6 +72,7 @@ class SearchCollectionViewCell: UICollectionViewCell {
     // MARK: LifeCycle
     
     override func layoutSubviews() {
+        
         super.layoutSubviews()
         let margins = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         contentView.frame = contentView.frame.inset(by: margins)

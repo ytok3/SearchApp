@@ -7,102 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1AF84B41-4FE3-45CE-B394-541612E92CE2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SearchApp/Screens/SearchList/SearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "searchAllResults(inputSearch:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1AF84B41-4FE3-45CE-B394-541612E92CE2 - b4a51ae6982273bf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SearchApp.SearchViewModel.searchAllResults(inputSearch: Swift.String) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Screens/SearchList/SearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "1AF84B41-4FE3-45CE-B394-541612E92CE2 - d31f5a7b3b87d47f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;SearchApp.Search&gt;&gt;) -&gt; () in SearchApp.SearchViewModel.searchAllResults(inputSearch: Swift.String) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Screens/SearchList/SearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "115">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1FC0E5D4-2D3E-4AB1-A9B8-C0A41FC5BAE1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SearchApp/Screens/SearchList/SearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "searchAllResults(inputSearch:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FB815133-8DCF-4551-9683-F888EB6CB121"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SearchApp/Screens/SearchList/SearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "searchAllResults(inputSearch:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "74B851FD-F7F3-4134-9146-F030835409A9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SearchApp/Screens/SearchList/SearchViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "searchAllResults(inputSearch:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "4ED00135-CBE9-4CC2-B16D-E0FFA016712A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -110,89 +14,9 @@
             filePath = "SearchApp/Screens/SearchList/SearchViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "searchBarSearchButtonClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6EBFC214-AC9E-4F36-A472-304DFB6E81D6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SearchApp/Network/Services.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "getSearch(input:onSuccess:onError:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6EBFC214-AC9E-4F36-A472-304DFB6E81D6 - 11d3f94723ac5626"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SearchApp.Services.getSearch(input: Swift.String, onSuccess: (Swift.Optional&lt;Swift.Array&lt;SearchApp.Search&gt;&gt;) -&gt; (), onError: (Alamofire.AFError) -&gt; ()) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Network/Services.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "6EBFC214-AC9E-4F36-A472-304DFB6E81D6 - d90a26f024493096"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (SearchApp.SearchList) -&gt; () in SearchApp.Services.getSearch(input: Swift.String, onSuccess: (Swift.Optional&lt;Swift.Array&lt;SearchApp.Search&gt;&gt;) -&gt; (), onError: (Alamofire.AFError) -&gt; ()) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Network/Services.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "76">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "63669A00-B16D-46D8-963B-246656399530"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SearchApp/Network/Services.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "getSearch(input:onSuccess:onError:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C7F94193-16DE-4903-8C89-1EA265490F60"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SearchApp/Network/Services.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getSearch(input:onSuccess:onError:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -242,38 +66,6 @@
             endingLineNumber = "31"
             landmarkName = "fetch(path:data:method:onSuccess:onError:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DE4D24F1-6925-4A32-A21B-00121416BB53 - 8ae7105180d6ca4d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SearchApp.ServiceManager.fetch&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(path: Swift.String, data: Swift.Optional&lt;Swift.Decodable &amp; Swift.Encodable&gt;, method: Alamofire.HTTPMethod, onSuccess: (&#x3c4;_0_0) -&gt; (), onError: (Alamofire.AFError) -&gt; ()) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Network/ServiceManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "643">
-               </Location>
-               <Location
-                  uuid = "DE4D24F1-6925-4A32-A21B-00121416BB53 - a490845db9e94b55"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_0_0, Alamofire.AFError&gt;) -&gt; () in SearchApp.ServiceManager.fetch&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(path: Swift.String, data: Swift.Optional&lt;Swift.Decodable &amp; Swift.Encodable&gt;, method: Alamofire.HTTPMethod, onSuccess: (&#x3c4;_0_0) -&gt; (), onError: (Alamofire.AFError) -&gt; ()) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Network/ServiceManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "416">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -306,38 +98,6 @@
             endingLineNumber = "43"
             landmarkName = "getDetail(id:onSucces:onError:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DA8AB4CC-3AFD-40AD-93AC-9CBF254553D8 - 4193607e0bc3e5d4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SearchApp.Services.getDetail(id: Swift.Int, onSucces: (Swift.Optional&lt;SearchApp.Detail&gt;) -&gt; (), onError: (Alamofire.AFError) -&gt; ()) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Network/Services.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "DA8AB4CC-3AFD-40AD-93AC-9CBF254553D8 - 5e89d5ced7120456"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (SearchApp.Detail) -&gt; () in SearchApp.Services.getDetail(id: Swift.Int, onSucces: (Swift.Optional&lt;SearchApp.Detail&gt;) -&gt; (), onError: (Alamofire.AFError) -&gt; ()) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Network/Services.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "490">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -382,42 +142,10 @@
             filePath = "SearchApp/Screens/SearchList/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "searchDetail(id:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "95F76655-5E64-4644-86E4-9E4D91ED6E8A - 4e398c94c8d795c1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SearchApp.SearchViewModel.searchDetail(id: Swift.Int) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Screens/SearchList/SearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "37">
-               </Location>
-               <Location
-                  uuid = "95F76655-5E64-4644-86E4-9E4D91ED6E8A - f9abc79f2adb2d5d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;SearchApp.Detail&gt;) -&gt; () in SearchApp.SearchViewModel.searchDetail(id: Swift.Int) -&gt; ()"
-                  moduleName = "SearchApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ytok/Desktop/MyProject/SearchApp/SearchApp/Screens/SearchList/SearchViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "131">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -430,8 +158,8 @@
             filePath = "SearchApp/Screens/SearchList/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "searchDetail(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +174,8 @@
             filePath = "SearchApp/Screens/SearchList/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "searchDetail(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -462,9 +190,25 @@
             filePath = "SearchApp/Screens/SearchList/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "searchDetail(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EF4607A-1668-4691-A702-6043AC2DA69B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SearchApp/Network/Services.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getDetail(id:onSucces:onError:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

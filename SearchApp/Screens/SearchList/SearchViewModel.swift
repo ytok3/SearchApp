@@ -14,10 +14,11 @@ protocol SearchViewModelProtocol {
     func searchMusicVideos(inputMusic: String)
     func setDelegateDetail(output: SearchDetailOutput)
     func searchDetail(id: Int)
-    
 }
 
 final class SearchViewModel: SearchViewModelProtocol {
+    
+    // MARK: Properties
     
     private var service: ServiceProtocol
     private var searchAll: [Search]?
@@ -26,11 +27,13 @@ final class SearchViewModel: SearchViewModelProtocol {
     private var detailOutput: SearchDetailOutput?
     private var detail: Detail?
     
+    // MARK: Init
     
     init(service: ServiceProtocol) {
         self.service = service
     }
     
+    // MARK: Func
     
     func setDelegateSearchAll(output: SearchBarOutput) {
         searchOutput = output

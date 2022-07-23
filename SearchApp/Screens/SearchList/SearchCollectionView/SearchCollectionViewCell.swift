@@ -6,10 +6,20 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class SearchCollectionViewCell: UICollectionViewCell {
     
     // MARK: View
+    
+    private let searchImage: UIImageView = {
+        let iv = UIImageView()
+        iv.translatesAutoresizingMaskIntoConstraints = false
+        iv.contentMode = .scaleToFill
+        iv.clipsToBounds = true
+        iv.backgroundColor = .white
+        return iv
+    }()
     
     private let verticalStack: UIStackView = {
         let sv = UIStackView()
@@ -87,8 +97,8 @@ class SearchCollectionViewCell: UICollectionViewCell {
     
     func configureCells() {
         
+        contentView.addSubview(searchImage)
         contentView.addSubview(verticalStack)
-        verticalStack.addArrangedSubview(artworkLabel)
         verticalStack.addArrangedSubview(collectionPriceLabel)
         verticalStack.addArrangedSubview(collectionNameLabel)
         
@@ -101,17 +111,19 @@ class SearchCollectionViewCell: UICollectionViewCell {
         
         NSLayoutConstraint.activate([
             
-            verticalStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
+            searchImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
+            searchImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
+            searchImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+            searchImage.heightAnchor.constraint(equalToConstant: contentView.frame.height / 1.25),
+            searchImage.widthAnchor.constraint(equalToConstant: contentView.frame.width / 2),
+            
+            verticalStack.topAnchor.constraint(equalTo: searchImage.bottomAnchor, constant: padding),
             verticalStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             verticalStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
             verticalStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding),
             verticalStack.widthAnchor.constraint(equalToConstant: contentView.frame.width - padding * 2),
-            
-            artworkLabel.topAnchor.constraint(equalTo: verticalStack.topAnchor),
-            artworkLabel.leadingAnchor.constraint(equalTo: verticalStack.leadingAnchor),
-            artworkLabel.trailingAnchor.constraint(equalTo: verticalStack.trailingAnchor),
         
-            collectionPriceLabel.topAnchor.constraint(equalTo: artworkLabel.bottomAnchor),
+            collectionPriceLabel.topAnchor.constraint(equalTo: verticalStack.bottomAnchor),
             collectionPriceLabel.leadingAnchor.constraint(equalTo: verticalStack.leadingAnchor),
             collectionPriceLabel.trailingAnchor.constraint(equalTo: verticalStack.trailingAnchor),
             
@@ -124,7 +136,7 @@ class SearchCollectionViewCell: UICollectionViewCell {
     
     func showCharacters(model: Search) {
 
-        artworkLabel.text = model.artworkUrl100
+        searchImage.af.setImage(withURL: URL(string: (model.artworkUrl100!))!)
         collectionPriceLabel.text = "\(model.collectionPrice ?? 0)"
         collectionNameLabel.text = model.collectionName
     }
